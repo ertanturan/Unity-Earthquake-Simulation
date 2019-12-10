@@ -21,7 +21,7 @@ public class Earthquake : ScriptableObject
 public enum EarthquakeType
 {
     Light=0,
-    Hard=1
+    Strong=1
 }
 
 public enum EarthquakeAxisType

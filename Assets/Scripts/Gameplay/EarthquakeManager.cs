@@ -62,7 +62,7 @@ public class EarthquakeManager : MonoBehaviour
 
         _rb = Platform.GetComponent<Rigidbody>();
         Earthquakes = Resources.LoadAll<Earthquake>("Data/Earthquake/Data").ToList();
-
+        
         #region Dictionary
 
         if (Earthquakes != null && Earthquakes.Count > 0)
@@ -70,13 +70,19 @@ public class EarthquakeManager : MonoBehaviour
             for (int i = 0; i < Earthquakes.Count; i++)
             {
                 // to read and write only once =>
-                if (Earthquakes[i].Info == null)
+                if (Earthquakes[i].Info.XAxis.Acceleration.Length == 0 ||
+                    Earthquakes[i].Info.XAxis.Seconds.Length == 0 ||
+                    Earthquakes[i].Info.ZAxis.Acceleration.Length == 0 ||
+                    Earthquakes[i].Info.ZAxis.Seconds.Length == 0
+                    )
                 {
+ 
                     //get axes
                     Earthquakes[i].Info = ReadFromTXT.ReturnEarthquakeInfo(
                         Earthquakes[i].X,
                         Earthquakes[i].Z
                     );
+
                     //set seconds
                     Earthquakes[i].Info.MaxSeconds = Earthquakes[i].Info.XAxis.Seconds[
                         Earthquakes[i].Info.XAxis.Seconds.Length - 1
@@ -91,12 +97,17 @@ public class EarthquakeManager : MonoBehaviour
 
                     //add to dictionary
 
-                    if (Earthquakes[i] != null)
-                    {
-                        Dictionary.Add(Earthquakes[i].Type, Earthquakes[i].Info);
-                    }
+                    
                 }
-       
+                else
+                {
+                    Debug.Log("No empty data detected. Using the pre-filled ones ...");
+                }
+                if (Earthquakes[i] != null)
+                {
+                    Dictionary.Add(Earthquakes[i].Type, Earthquakes[i].Info);
+                }
+
             }
         }
 

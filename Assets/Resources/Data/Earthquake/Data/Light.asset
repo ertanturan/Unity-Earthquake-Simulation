@@ -15,10 +15,12 @@ MonoBehaviour:
   Type: 0
   X: {fileID: 4900000, guid: e88b212ee12f33741b2418c80685e116, type: 3}
   Z: {fileID: 4900000, guid: 8f22a31ebcae07e4f93d1893b14b5d4a, type: 3}
-  secondsX: []
-  secondsZ: []
-  accX: []
-  accZ: []
   Info:
-    XAxis: {fileID: 0}
-    ZAxis: {fileID: 0}
+    XAxis:
+      Seconds: []
+      Acceleration: []
+    ZAxis:
+      Seconds: []
+      Acceleration: []
+    MaxSeconds: 0
+    AverageAcceleration: {x: 0, y: 0, z: 0}
