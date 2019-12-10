@@ -34,7 +34,7 @@ public class EarthquakeSeverityDropdown : DropDownComponent
                 EarthquakeManager.Instance.SetEarthquake(EarthquakeType.Light);
                 break;
             case 1:
-                Debug.Log("HARD EQ SELECTED..");
+                Debug.Log("STRONG EQ SELECTED..");
                 EarthquakeManager.Instance.SetEarthquake(EarthquakeType.Strong);
                 break;
         }
