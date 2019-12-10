@@ -69,31 +69,34 @@ public class EarthquakeManager : MonoBehaviour
         {
             for (int i = 0; i < Earthquakes.Count; i++)
             {
-                // to read and write only once => if(Earthquakes[i].Info!=null)
-
-                //get axes
-                Earthquakes[i].Info = ReadFromTXT.ReturnEarthquakeInfo(
-                    Earthquakes[i].X,
-                    Earthquakes[i].Z
-                );
-                //set seconds
-                Earthquakes[i].Info.MaxSeconds = Earthquakes[i].Info.XAxis.Seconds[
-                    Earthquakes[i].Info.XAxis.Seconds.Length - 1
-                ];
-
-                //calculate average acceleration
-
-                float xAverage = Earthquakes[i].Info.XAxis.Acceleration.Average();
-                float zAverage = Earthquakes[i].Info.ZAxis.Acceleration.Average();
-
-                Earthquakes[i].Info.AverageAcceleration = new Vector3(xAverage, 0, zAverage);
-
-                //add to dictionary
-
-                if (Earthquakes[i] != null)
+                // to read and write only once =>
+                if (Earthquakes[i].Info == null)
                 {
-                    Dictionary.Add(Earthquakes[i].Type, Earthquakes[i].Info);
+                    //get axes
+                    Earthquakes[i].Info = ReadFromTXT.ReturnEarthquakeInfo(
+                        Earthquakes[i].X,
+                        Earthquakes[i].Z
+                    );
+                    //set seconds
+                    Earthquakes[i].Info.MaxSeconds = Earthquakes[i].Info.XAxis.Seconds[
+                        Earthquakes[i].Info.XAxis.Seconds.Length - 1
+                    ];
+
+                    //calculate average acceleration
+
+                    float xAverage = Earthquakes[i].Info.XAxis.Acceleration.Average();
+                    float zAverage = Earthquakes[i].Info.ZAxis.Acceleration.Average();
+
+                    Earthquakes[i].Info.AverageAcceleration = new Vector3(xAverage, 0, zAverage);
+
+                    //add to dictionary
+
+                    if (Earthquakes[i] != null)
+                    {
+                        Dictionary.Add(Earthquakes[i].Type, Earthquakes[i].Info);
+                    }
                 }
+       
             }
         }
 
