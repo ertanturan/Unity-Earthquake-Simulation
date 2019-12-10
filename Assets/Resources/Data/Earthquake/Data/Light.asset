@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 176b83259bff75445847ae51d9283d22, type: 3}
+  m_Name: Light
+  m_EditorClassIdentifier: 
+  Type: 0
+  X: {fileID: 4900000, guid: e88b212ee12f33741b2418c80685e116, type: 3}
+  Z: {fileID: 4900000, guid: 8f22a31ebcae07e4f93d1893b14b5d4a, type: 3}
+  secondsX: []
+  secondsZ: []
+  accX: []
+  accZ: []
+  Info:
+    XAxis: {fileID: 0}
+    ZAxis: {fileID: 0}
