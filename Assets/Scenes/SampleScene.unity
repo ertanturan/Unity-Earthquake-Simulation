@@ -1956,7 +1956,7 @@ MonoBehaviour:
     m_Options:
     - m_Text: LIGHT
       m_Image: {fileID: 0}
-    - m_Text: HARD
+    - m_Text: STRONG
       m_Image: {fileID: 0}
   m_OnValueChanged:
     m_PersistentCalls:
