@@ -42,16 +42,16 @@ public class PooledObject : MonoBehaviour, IPooledObject
         _rb.AddForce(random);
     }
 
-    //private void Update()
-    //{
-    //    if (_timer > 0)
-    //    {
-    //        _timer -= Time.deltaTime;
-    //    }
-    //    else
-    //    {
-    //        ObjectPooler.Instance.Despawn(Type,gameObject);
-    //    }
-    //}
+    private void Update()
+    {
+        if (_timer > 0)
+        {
+            _timer -= Time.deltaTime;
+        }
+        else
+        {
+            ObjectPooler.Instance.Despawn(Type, gameObject);
+        }
+    }
 
 }
