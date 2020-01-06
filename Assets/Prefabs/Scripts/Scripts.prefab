@@ -29,7 +29,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3539538636611283044}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &246699006305458063
 MonoBehaviour:
@@ -72,58 +72,6 @@ MonoBehaviour:
   OnEarthquakeStop:
     m_PersistentCalls:
       m_Calls: []
---- !u!1 &3539538636222621051
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 3539538636222621048}
-  - component: {fileID: 3539538636222621049}
-  m_Layer: 0
-  m_Name: ObjectPooler
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &3539538636222621048
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3539538636222621051}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 3539538636611283044}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3539538636222621049
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3539538636222621051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2342b4daf5e04a241a925e9593a4563f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Pool:
-  - Tag: 0
-    Prefab: {fileID: 6019084589242276637, guid: 77e83e7ce4678ad48a57d3aa0e35ad23,
-      type: 3}
-    Size: 3
-  - Tag: 1
-    Prefab: {fileID: 1351021554483084063, guid: 47daf80eba605e64c918ac8b993ea5cd,
-      type: 3}
-    Size: 10
 --- !u!1 &3539538636611283047
 GameObject:
   m_ObjectHideFlags: 0
@@ -151,7 +99,6 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3539538636222621048}
   - {fileID: 3539538635021140510}
   m_Father: {fileID: 0}
   m_RootOrder: 0
