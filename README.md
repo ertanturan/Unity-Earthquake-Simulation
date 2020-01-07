@@ -1,12 +1,12 @@
 # Unity-Earthquake-Simulation
 
-Earthquake simulation using real earthquake data from textassets.
+Earthquake simulation using real earthquake data from textassets in unity.
 
 ## Usage
 
 Check youtube video below.
 
-...VIDEO WILL BE HERE..
+[![Unity Earthquake Simulation](http://img.youtube.com/vi/0TEqpfUokM8/0.jpg)](http://www.youtube.com/watch?v=0TEqpfUokM8 "Unity Earthquake Simulation")
 
 ## Demo Project
 
