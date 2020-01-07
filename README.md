@@ -6,7 +6,7 @@ Earthquake simulation using real earthquake data from textassets.
 
 Check youtube video below.
 
-...VIDEO WILL BE HERE..
+![YOUTUBE VIDEO](https://www.youtube.com/watch?v=0TEqpfUokM8)
 
 ## Demo Project
 
