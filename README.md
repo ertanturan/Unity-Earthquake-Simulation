@@ -6,7 +6,7 @@ Earthquake simulation using real earthquake data from textassets.
 
 Check youtube video below.
 
-![YOUTUBE VIDEO](https://www.youtube.com/watch?v=0TEqpfUokM8)
+[![Unity Earthquake Simulation](http://img.youtube.com/vi/0TEqpfUokM8/0.jpg)](http://www.youtube.com/watch?v=0TEqpfUokM8 "Unity Earthquake Simulation")
 
 ## Demo Project
 
