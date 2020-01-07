@@ -1,6 +1,6 @@
 # Unity-Earthquake-Simulation
 
-Earthquake simulation using real earthquake data from textassets.
+Earthquake simulation using real earthquake data from textassets in unity.
 
 ## Usage
 
