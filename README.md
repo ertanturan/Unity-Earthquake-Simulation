@@ -16,6 +16,8 @@ Demo project can be found under 'Assets/Scenes' folder named ' SampleScene '
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
-
+## Future Developments
+Will be added:
+-Cube system to visualize the impacts of the earthquake
 
 # ENJOY !
